@@ -1,0 +1,148 @@
+body {
+
+    background-image: url('DALL·E 2024-12-03 20.37.09 - A visually striking background image combining themes of HTML and CSS programming with the Matrix movie aesthetics. The image should feature a dark, d.webp'); /* Ścieżka do obrazu */
+    background-size: cover; /* Dopasowanie obrazu do całej strony */
+    background-repeat: no-repeat; /* Nie powtarzaj obrazu */
+    background-position: center; /* Wyśrodkuj obraz */
+
+    font-family: Arial, sans-serif;
+  }
+
+  .toggleCategory {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #0a3c10;
+    color: rgb(205, 14, 14);
+    overflow-y: auto;
+    padding: 15px;
+   
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #0a3c10;
+    color: rgb(205, 14, 14);
+    overflow-y: auto;
+    padding: 15px;
+  }
+  .sidebar h4 {
+    color: rgb(255, 255, 255);
+  }
+  .content {
+    margin-left: 270px;
+    padding: 20px;
+    border-right: 2px solid #d20e0e;
+    min-height: 100vh;
+  }
+  .learning-column {
+    margin-left: 20px;
+    padding: 20px;
+    border-left: 2px solid #ddd;
+    min-height: 100vh;
+  }
+  .list-group-item {
+    cursor: pointer;
+  }
+  .hidden-list {
+    color:#f30707;
+    display: none;
+  }
+  .skills-title {
+    color: #ffffff; /* Kolor tekstu, np. biały */
+    font-weight: bold; /* Pogrubienie tekstu */
+    width: fit-content; /* Dopasowanie szerokości do tekstu */
+    margin: 0 auto; /* Wyśrodkowanie ramki */
+    padding: 20px; /* Odstępy między tekstem a krawędzią ramki */
+    background-color: #0a3c10; /* Kolor wypełnienia ramki (np. czarny) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Dodanie cienia */
+    border: 2px solid #ffffff; /* Kolor zewnętrznego obramowania (np. biały) */
+    border-radius: 10px; /* Zaokrąglone rogi ramki */
+    text-align: center; /* Wyśrodkowanie tekstu wewnątrz ramki */
+}
+
+  
+  .btn-primary {
+    color: #ffffff; /* Zamień na dowolny kolor, np. czerwony (#ff0000) */
+    font-weight: bold; /* Opcjonalnie pogrubienie */
+
+  }
+
+  .active-text {
+    color: #007bff; /* Kolor tekstu */
+    font-weight: bold; /* Pogrubienie tekstu */
+    background-color: #f8f9fa; /* Opcjonalne tło dla kontrastu */
+    padding: 5px 10px; /* Odstępy między tekstem a ramką */
+    border: 2px solid #007bff; /* Kolor ramki */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    display: inline-block; /* Zapewnia, że ramka obejmuje tylko tekst */
+  }
+
+  .text-with-border {
+    color: #000; /* Kolor tekstu */
+    font-weight: bold; /* Opcjonalne pogrubienie */
+    background-color: #f8f9fa; /* Tło ramki */
+    padding: 10px; /* Odstępy między tekstem a obramowaniem */
+    border: 2px solid #0a3c10; /* Obramowanie w kolorze niebieskim */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    display: inline-block; /* Dopasowanie ramki do rozmiaru tekstu */
+    margin-bottom: 10px; /* Odstęp między kolejnymi liniami tekstu */
+  }
+
+  .highlight-text {
+    color: #ffffff; /* Niebieski kolor tekstu */
+    font-weight: bold; /* Pogrubienie (opcjonalne) */
+  }
+
+  /* Gra w kostke */ 
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+}
+
+  #game {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#leaderboard {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}

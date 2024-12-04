@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Umiejętności</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+  <!--Style-->
+</head>
+<body>
+    <!--lewe menu-->
+  <div class="sidebar">
+    <h4>Kategorie IT</h4>
+    <ul class="list-group">
+      <li class="list-group-item bg-dark text-white" onclick="toggleCategory('programming')">Programowanie</li>
+      <ul id="programming" class="hidden-list list-group">
+        <li class="list-group-item bg-light">
+          <strong>Czego chcę się nauczyć:</strong>
+          <ul id="programming-learn-list"></ul>
+          <input type="text" id="programming-learn-input" class="form-control my-2" placeholder="Dodaj nową umiejętność">
+          <button class="btn btn-sm btn-primary" onclick="addToLearnList('programming-learn')">Dodaj</button>
+        </li>
+      </ul>
+
+      <li class="list-group-item bg-dark text-white" onclick="toggleCategory('networking')">Sieci</li>
+      <ul id="networking" class="hidden-list list-group">
+        <li class="list-group-item bg-light">
+          <strong>Czego chcę się nauczyć:</strong>
+          <ul id="networking-learn-list"></ul>
+          <input type="text" id="networking-learn-input" class="form-control my-2" placeholder="Dodaj nową umiejętność">
+          <button class="btn btn-sm btn-primary" onclick="addToLearnList('networking-learn')">Dodaj</button>
+        </li>
+      </ul>
+
+      <li class="list-group-item bg-dark text-white" onclick="toggleCategory('AI')">AI</li>
+      <ul id="AI" class="hidden-list list-group">
+        <li class="list-group-item bg-light">
+          <strong>Czego chcę się nauczyć:</strong>
+          <ul id="AI-learn-list"></ul>
+          <input type="text" id="AI-learn-input" class="form-control my-2" placeholder="Dodaj nową umiejętność">
+          <button class="btn btn-sm btn-primary" onclick="addToLearnList('AI-learn')">Dodaj</button>
+        </li>
+      </ul>
+
+      <li class="list-group-item bg-dark text-white" onclick="toggleCategory('databases')">Bazy danych</li>
+      <ul id="databases" class="hidden-list list-group">
+        <li class="list-group-item bg-light">
+          <strong>Czego chcę się nauczyć:</strong>
+          <ul id="databases-learn-list"></ul>
+          <input type="text" id="databases-learn-input" class="form-control my-2" placeholder="Dodaj nową umiejętność">
+          <button class="btn btn-sm btn-primary" onclick="addToLearnList('databases-learn')">Dodaj</button>
+        </li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2 class="skills-title">Czego chce się nauczyć</h2>
+
+    <!--lewe menu po otwarciu-->
+    <div id="skills">
+      <h4 id="programming-skills" class="hidden-list">Programowanie</h4>
+      <ul class="list-group hidden-list">
+        <li class="list-group-item">HTML</li>
+        <li class="list-group-item">CSS</li>
+        <li class="list-group-item">JavaScript</li>
+        <li class="list-group-item">Python</li>
+      </ul>
+
+      <h4 id="AI-skills" class="hidden-list">AI</h4>
+      <ul class="list-group hidden-list">
+        <li class="list-group-item">ChatGPT</li>
+      </ul>
+
+      <h4 id="networking-skills" class="hidden-list">Sieci</h4>
+      <ul class="list-group hidden-list">
+        <li class="list-group-item">Podstawy TCP/IP</li>
+        <li class="list-group-item">Konfiguracja routerów</li>
+      </ul>
+
+      <h4 id="databases-skills" class="hidden-list">Bazy danych</h4>
+      <ul class="list-group hidden-list">
+        <li class="list-group-item">SQL</li>
+        <li class="list-group-item">MySQL</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  
+
+  <script src="script1.js"></script>
+  <!--odnośnik do JS-->
+
+   
+<!--GraWkostke-->
+
+<div id="game">
+    <h1>Gra w Kostkę</h1>
+    <p id="message">Witaj w grze! Zgadnij, jaka liczba wypadnie na kostce (1-6):</p>
+    <input type="text" id="guess" placeholder="Podaj liczbę">
+    <button id="submit">Zgadnij</button>
+    <p id="result"></p>
+    <p id="score"></p>
+    <div id="leaderboard">
+        <h2>Najlepsze Wyniki:</h2>
+        <ul id="scores-list"></ul>
+    </div>
+
+
+<script src="grasj.js"></script>
+
+  
+</body>
+</html>
